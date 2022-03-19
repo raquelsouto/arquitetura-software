@@ -9,9 +9,9 @@
 ### 1. Microsserviço de Produto  <br />  
 [1.1 Produto](produto)  
   
-### 1. Api Gateway Zuul  <br />  
-[1.1 Api Gateway](api-gateway-zuul)  
+### 2. Api Gateway Zuul  <br />  
+[2.1 Api Gateway](api-gateway-zuul)  
 
-### 2. Eureka Server  <br />  
-[1.1 Eureka Server](eurekaserver)  
+### 3. Eureka Server  <br />  
+[3.1 Eureka Server](eurekaserver)  
 
