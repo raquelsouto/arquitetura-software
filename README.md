@@ -10,7 +10,7 @@
 [1.1 Produto](produto)  
   
 ### 1. Api Gateway Zuul  <br />  
-[1.1 Singleton](api-gateway-zuul)  
+[1.1 Api Gateway](api-gateway-zuul)  
 
 ### 2. Eureka Server  <br />  
 [1.1 Eureka Server](eurekaserver)  
