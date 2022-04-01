@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Api
 @RestController
-@RequestMapping("/compras")
+@RequestMapping("/loja")
 public class CompraController {
 
     @Autowired
