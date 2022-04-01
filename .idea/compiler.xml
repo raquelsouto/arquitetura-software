@@ -2,25 +2,35 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="produto" />
-        <module name="empresa" />
+        <module name="eurekaserver" />
         <module name="arquiteturaSoftware" />
+        <module name="carrinho" />
+        <module name="empresa" />
+        <module name="produto" />
+        <module name="api-gateway-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway-zuul" target="11" />
       <module name="arquiteturaSoftware" target="1.8" />
+      <module name="carrinho" target="11" />
       <module name="empresa" target="1.8" />
-      <module name="produto" target="1.8" />
+      <module name="eurekaserver" target="11" />
+      <module name="produto" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway-zuul" options="-parameters" />
       <module name="arquiteturaSoftware" options="-parameters" />
+      <module name="carrinho" options="-parameters" />
       <module name="empresa" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
       <module name="produto" options="-parameters" />
     </option>
   </component>

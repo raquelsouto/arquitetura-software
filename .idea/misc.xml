@@ -6,6 +6,10 @@
         <option value="$PROJECT_DIR$/arquiteturaSoftware/pom.xml" />
         <option value="$PROJECT_DIR$/empresa/pom.xml" />
         <option value="$PROJECT_DIR$/produto/pom.xml" />
+        <option value="$PROJECT_DIR$/carrinho/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/api-gateway-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice/produto/pom.xml" />
       </list>
     </option>
   </component>

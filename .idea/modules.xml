@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice/api-gateway-zuul/api-gateway-zuul.iml" filepath="$PROJECT_DIR$/microservice/api-gateway-zuul/api-gateway-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/arquitetura-software.iml" filepath="$PROJECT_DIR$/.idea/arquitetura-software.iml" />
       <module fileurl="file://$PROJECT_DIR$/arquiteturaSoftware/arquiteturaSoftware.iml" filepath="$PROJECT_DIR$/arquiteturaSoftware/arquiteturaSoftware.iml" />
-      <module fileurl="file://$PROJECT_DIR$/produto/empresa.iml" filepath="$PROJECT_DIR$/produto/empresa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/empresa/produto.iml" filepath="$PROJECT_DIR$/empresa/produto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/produto/carrinho.iml" filepath="$PROJECT_DIR$/produto/carrinho.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carrinho/empresa.iml" filepath="$PROJECT_DIR$/carrinho/empresa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/microservice/eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/produto/produto.iml" filepath="$PROJECT_DIR$/microservice/produto/produto.iml" />
     </modules>
   </component>
 </project>

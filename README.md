@@ -1,13 +1,9 @@
 
 # Repositório de atividades desenvolvidas para a disciplina de Arquitetura de Software, P5 - Unifacisa
 
-
+## Java - Spring Cloud - Projetos Microsserviços: <br />    
   
-## Microsserviços - Java - Spring Cloud <br />    
-  
-
-### [1 Carrinho](produto)
-### [2 Api Gateway](api-gateway-zuul)  
-### [3 Eureka Server](eurekaserver) 
+### [1. Produto](microservice)
+### [2. Ecommerce](ecommerce)
   
 
