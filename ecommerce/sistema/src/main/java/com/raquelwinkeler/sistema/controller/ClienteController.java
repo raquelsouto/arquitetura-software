@@ -29,7 +29,7 @@ public class ClienteController {
         return clienteRepository.findAll();
     }
 
-    @ApiOperation(value="Retorna o cliente de acordo com o id")
+    @ApiOperation("Retorna o cliente de acordo com o id")
     @GetMapping("/{id}")
     public Cliente findById(@PathVariable("id") Long id) throws Exception {
         return clienteRepository.findById(id)
@@ -50,10 +50,10 @@ public class ClienteController {
                                     @RequestBody ClienteDTO clienteDTO) {
         Optional encontrou = clienteRepository.findById(id);
         if(encontrou.isPresent()) {
-            ResponseEntity.notFound().build();
+            clienteService.atualizar(clienteDTO);
+            return ResponseEntity.ok().body((new ClienteDTO(clienteDTO)));
         }
-        clienteService.atualizar(clienteDTO);
-        return ResponseEntity.ok().body((new ClienteDTO(clienteDTO)));
+        return ResponseEntity.notFound().build();
     }
 
     @ApiOperation("Deleta um cliente de acordo com o id")
@@ -67,5 +67,4 @@ public class ClienteController {
         }
         return ResponseEntity.notFound().build();
     }
-
 }
