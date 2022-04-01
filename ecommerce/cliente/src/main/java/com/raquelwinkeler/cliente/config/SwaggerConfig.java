@@ -21,7 +21,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.raquelwinkeler.sistema"))
+                .apis(RequestHandlerSelectors.basePackage("com.raquelwinkeler.cliente"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo())
@@ -30,7 +30,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "Sistema Microservice",
+                "Cliente Microservice",
                 "Descrição: Mapemento da API",
                 "Versão: 1.0",
                 "Termos de serviço",
