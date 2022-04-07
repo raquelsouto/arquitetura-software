@@ -7,6 +7,7 @@ import com.raquelwinkeler.entrega.dto.EntregaDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @Api
@@ -33,16 +34,12 @@ public class EntregaController {
                 .orElseThrow(() -> new Exception("Não foi possível encontrar a entrega de id: " + id));
     }
 
-    @ApiOperation("Encontra as entregas de acordo com a id")
-    @GetMapping("/{îd}")
-    public Iterable<Entrega> findAll() {
-        return entregaRepository.findAll();
-    }
-
-
     @ApiOperation("Envia dados da entrega")
     @PostMapping
-    public EntregaDTO cadastrar(@RequestBody EntregaDTO pedido) {
-        return entregaService.cadastrar(pedido);
+    public ResponseEntity<EntregaDTO> cadastrar(@RequestBody EntregaDTO pedido) {
+        entregaService.cadastrar(pedido);
+
+        return ResponseEntity.ok().body((new EntregaDTO(pedido)));
     }
+
 }

@@ -14,17 +14,17 @@ public class EntregaService {
 
     public EntregaDTO cadastrar(EntregaDTO entregaDTO) {
         Entrega entrega = new Entrega();
-        entrega.setIdPedido(entregaDTO.getPedidoId());
+        entrega.setIdPedido(entregaDTO.getIdPedido());
         entrega.setEnderecoDeOrigem(entregaDTO.getEnderecoDeOrigem());
         entrega.setEnderecoDestinatario(entregaDTO.getEnderecoDestinatario());
-        entrega.setPrevisaoDeEntrega(entregaDTO.getPrevisaoEntrega());
+        entrega.setPrevisaoDeEntrega(entregaDTO.getPrevisaoDeEntrega());
         entregaRepository.save(entrega);
 
         EntregaDTO entregaResult = new EntregaDTO();
-        entregaResult.setPedidoId(entrega.getIdPedido());
+        entregaResult.setIdPedido(entrega.getIdPedido());
         entregaResult.setEnderecoDeOrigem(entrega.getEnderecoDeOrigem());
         entregaResult.setEnderecoDestinatario(entrega.getEnderecoDestinatario());
-        entregaResult.setPrevisaoEntrega(entrega.getPrevisaoDeEntrega());
+        entregaResult.setPrevisaoDeEntrega(entrega.getPrevisaoDeEntrega());
         return entregaResult;
     }
 

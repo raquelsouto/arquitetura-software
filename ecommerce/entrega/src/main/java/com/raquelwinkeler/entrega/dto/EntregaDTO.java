@@ -1,18 +1,22 @@
 package com.raquelwinkeler.entrega.dto;
 
-import com.raquelwinkeler.entrega.model.Entrega;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class EntregaDTO {
 
-    private Long pedidoId;
+    private Long idPedido;
     private String enderecoDeOrigem;
     private String enderecoDestinatario;
-    private String previsaoEntrega;
+    private String previsaoDeEntrega;
+
+    public EntregaDTO(EntregaDTO entrega) {
+        this.idPedido = entrega.getIdPedido();
+        this.enderecoDeOrigem = entrega.getEnderecoDeOrigem();
+        this.enderecoDestinatario = entrega.getEnderecoDestinatario();
+        this.previsaoDeEntrega = entrega.getPrevisaoDeEntrega();
+    }
 
 }
