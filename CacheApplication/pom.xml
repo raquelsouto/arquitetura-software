@@ -11,16 +11,12 @@
     <groupId>unifacisa.arq.software</groupId>
     <artifactId>CacheApplication</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>TesteEhCache</name>
+    <name>CacheApplication</name>
     <description>Um exemplo de demonstração do EhCache local</description>
     <properties>
         <java.version>11</java.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId >
-            <artifactId>spring-boot-starter-web </artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

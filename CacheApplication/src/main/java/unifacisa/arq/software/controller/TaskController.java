@@ -20,8 +20,8 @@ public class TaskController {
     }
 
     @PutMapping("/{id}")
-    public Task update(@PathVariable("id") long id, @RequestParam(required = false) boolean noCache) {
-        return taskService.update(id, noCache);
+    public Task update(@PathVariable long id) {
+        return taskService.update(id);
     }
 
     @DeleteMapping("/cache")
